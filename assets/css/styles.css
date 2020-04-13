@@ -20,7 +20,7 @@ body{
     margin: 5rem auto;
     background-color: #fff;
     overflow: hidden;
-    max-width: 50rem;
+    max-width: 48rem;
     border-radius: 0.5rem;
     box-shadow: 0.7rem 1rem 2rem hsla(218, 22%, 67%, 0.5), -0.7rem 0 2rem hsla(218, 22%, 67%, 0.5);
     -moz-box-shadow: 0.7rem 1rem 2rem hsla(218, 22%, 67%, 0.5), -0.7rem 0 2rem hsla(218, 22%, 67%, 0.5);
@@ -68,7 +68,7 @@ body{
     font-weight: 700;
 }
 .bottom-left .p-month{
-    color: hsl(201, 86%, 86%);
+    color: hsla(204, 43%, 93%, 0.7);
     font-size: 0.9rem;
 }
 
