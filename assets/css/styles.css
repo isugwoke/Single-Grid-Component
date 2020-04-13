@@ -10,6 +10,7 @@
 body{
     font-family: 'Karla', sans-serif;
     background-color: hsl(204, 43%, 93%);
+    margin: 0 1.5rem;
 }
 
 .container{
@@ -20,8 +21,10 @@ body{
     background-color: #fff;
     overflow: hidden;
     max-width: 50rem;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
     box-shadow: 0.7rem 1rem 2rem hsla(218, 22%, 67%, 0.5), -0.7rem 0 2rem hsla(218, 22%, 67%, 0.5);
+    -moz-box-shadow: 0.7rem 1rem 2rem hsla(218, 22%, 67%, 0.5), -0.7rem 0 2rem hsla(218, 22%, 67%, 0.5);
+    -webkit-box-shadow: 0.7rem 1rem 2rem hsla(218, 22%, 67%, 0.5), -0.7rem 0 2rem hsla(218, 22%, 67%, 0.5);
 }
 
 .container > div{
@@ -59,17 +62,17 @@ body{
 .bottom-left{
     background-color: hsl(179, 62%, 43%);
 }
-.bottom-left p, bottom-right ul{
-    font-size: 1.2rem;
-    
-}
 .bottom-left .price {
     font-size: 2rem;
     font-weight: 700;
 }
 .bottom-left .p-month{
-    color: hsl(204, 43%, 93%);
-    font-size: 1rem;
+    color: hsl(201, 86%, 86%);
+    font-size: 0.9rem;
+}
+
+.bottom-text{
+    color:  hsl(204, 43%, 93%);
 }
 
 .signup-btn{
@@ -94,10 +97,28 @@ body{
     line-height: 1.5;
 }
 
-@media (max-width:768px){
+@media only screen and (max-width:  700px){
     .container{
         grid-template-columns: 1fr;
         /* grid-template-rows: repeat(3, 1fr); */
+    }
+    .container > div{
+        padding: 1.5rem;
+    }
+
+    .top h1{
+        font-size: 1.5rem;
+    }
+    .top p{
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .signup-btn{
+        padding: 0.8rem;
     }
 
     .bottom{
