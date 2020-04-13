@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html, body{
+    height: 100%;
+    font-family: Karla;
+    background: hsl(204, 43%, 93%);
+}
+.container{
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width: 55%;
+    background: #ffffff;
+    /* padding: 2.8rem; */
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem hsl(218, 22%, 67%, 0.2);
+}
+
+.top{
+    padding: 2.8rem;
+
+}
+.top h1{
+    color: hsl(179, 75%, 41%);
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+
+}
+.top h2{
+    color:  hsl(71, 83%, 48%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+.intro{
+    color: hsl(217, 30%, 66%);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+
+}
+
+.bottom{
+    display: flex;
+    color: #fff;
+}
+
+.subscribe{
+    background: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 1rem;
+    width: 50%;
+    padding: 2.8rem;
+}
+.bottom h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.p-month{
+    color: hsl(204, 43%, 93%);
+}
+
+.signup-btn{
+    background: hsl(71, 73%, 54%);
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 4.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.signup-btn:hover{
+    background: hsl(71, 83%, 68%);
+
+}
+
+.why-us{
+    background: hsl(179, 62%, 43%, 0.75);
+    border-bottom-right-radius: 1rem;
+    width: 50%;
+    padding: 2.8rem;
+
+}
+
+.why-us p{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: hsl(204, 43%, 93%);
+}
+footer{
+    margin-bottom: 2rem;
+}
+.attribution {
+     font-size: 11px; text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media  only screen and (max-width:615px){
+   .container{
+       flex-direction:column;
+       margin: 10rem 0;
+   }
+
+   .main{
+       width: 90%;
+   }
+   .bottom{
+       flex-direction: column;
+   }
+   .subscribe{
+       width: inherit;
+       border-radius: 0;
+   }
+   .signup-btn{
+       width: 100%;
+   }
+   .why-us{
+       width: inherit;
+       border-bottom-left-radius: 1rem;
+   }
+}
+
+@media only screen and (max-width:853px){
+    .main{
+        width: 90%;
+    }
+
+    .signup-btn{
+        font-size: 0.85rem;
+    }
+
+}
